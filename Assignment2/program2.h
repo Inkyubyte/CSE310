@@ -18,4 +18,5 @@ int* GetSortedOrder(int a[MAX_ARRAY_SIZE], int sortType, int base);
 // Returns the statistic the last time the sort was done using the specified sort type.
 int GetStatistic(int sortType, int bucketNumber);
 
+
 #endif
