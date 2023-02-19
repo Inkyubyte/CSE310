@@ -6,12 +6,12 @@
 /* You may use this file to test your program.
 	This file will not be submitted, as a different test2.cpp will be used. */
 int main(int argv, char **argc) {
-	int testSort2[11] = {4,6,5,4,3,2,1,3,2,1,0};
-	int testSort[5] = {4,11,10,10,14};
+	int testSort[11] = {4,550,1229,41,331,2,1,3,2,1,0};
+	int testSort2[6] = {5,5,4,3,2,1};
 
 	std::cout << "Starting Values: ";
-	for(int value = 0; value < 5; value++) {
-		std::cout << testSort[value] << " ";
+	for(int value = 0; value < 6; value++) {
+		std::cout << testSort2[value] << " ";
 	}
 
 	int countingSortIndex = GetStatistic(1,1);
@@ -20,11 +20,11 @@ int main(int argv, char **argc) {
 
 
 
-	GetSortedOrder(testSort, 1, 0);
+	GetSortedOrder(testSort2, 2, 2);
 
 	std::cout << "\nEnding Values: ";
-	for(int value = 0; value < 5; value++) {
-		std::cout << testSort[value] << " ";
+	for(int value = 0; value < 6; value++) {
+		std::cout << testSort2[value] << " ";
 	}
 
 	countingSortIndex = GetStatistic(1,0);
